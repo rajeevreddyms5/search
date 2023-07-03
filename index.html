@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        
         <title>Search</title>
+
+        <style>
+            .in {
+                border-top-left-radius: 7px !important;
+                border-bottom-left-radius: 7px !important;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+
+            .im{
+                text-align: center;
+            }
+
+        </style>
+    
     </head>
-    <body style="text-align: center">
-        <div id="links">
+
+    <body>
+        <div style="text-align: right; padding-right: 20px; padding-top: 20px;">
             <a href = "imagesearch.html"> Image search</a>
+            &nbsp;&nbsp;&nbsp;
             <a href = "advancedsearch.html"> Advanced search</a>
         </div>
-        <img src="googlelogo.png" alt="Google">
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+
+        <div class = "im">
+            <br><br><br><br><br><br><br>
+            <img src="googlelogo.png" alt="Google">
+            <form action="https://www.google.com/search">
+                <input class="in" type="text" name="q", placeholder="search", style="width: 400px";>
+                <br><br>
+                <input type="submit" value="Google Search">
+            </form>
+
+        </div>
+
     </body>
 </html>
