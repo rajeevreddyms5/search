@@ -14,15 +14,22 @@
         <title>Google Image Search</title>
 
         <style>
-            .in {
-                border-top-left-radius: 7px !important;
-                border-bottom-left-radius: 7px !important;
-                border-top-right-radius: 7px;
-                border-bottom-right-radius: 7px;
-            }
 
             .im{
-                text-align: center;
+                text-align: left;
+            }
+
+            .form{
+                padding-left: 30px;
+            }
+            .in{
+                align-items: flex-end;
+            }
+            #button{
+                background-color: #4d90fe;
+                width: 150px;
+                color: white;
+                font-weight: bold;
             }
 
         </style>
@@ -35,12 +42,33 @@
         </div>
 
         <div class = "im">
-            <br><br><br><br><br><br><br>
-            <img src="googlelogo.png" alt="Google">
-            <form action="https://www.google.com/search">
-                <input class="in" type="text" name="q", placeholder="search", style="width: 400px";>
+            <img src="googlelogo.png" alt="Google" width="100px" height="30px">
+            <div style="padding-left: 30px; padding-top: 30px; padding-bottom: 10px; font-size: 20px; color: red;">
+                    Advanced search
+            </div>
+            <hr>
+            <form class="form" action="https://www.google.com/search">
+                <div style="font-size: 16px; padding-top: 20px;">
+                    Find Pages with...                    
+                </div>
+                
+                <br>
+                all these words:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="in" type="text" name="q", style="width: 700px";>
                 <br><br>
-                <input type="submit" value="Google Advanced Search">
+                this exact word or phrase:&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="in" type="text" name="q", style="width: 700px";>
+                <br><br>
+                any of these words:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="in" type="text" name="q", style="width: 700px";>
+                <br><br>
+                none of these words:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="in" type="text" name="q", style="width: 700px";>
+                <br><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="button" type="submit" value="Advanced Search">
             </form>
         </div>
 
